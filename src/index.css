@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* --- Light theme (sky gradient) --- */
+  --color-sky-1: #7dd3fc; /* bg gradient start */
+  --color-sky-2: #38bdf8; /* bg gradient mid */
+  --color-indigo-1: #818cf8;
+  --color-indigo-2: #4f46e5; /* bg gradient end */
+
+  /* --- Dark theme (night gradient) --- */
+  --color-slate-900: #0f172a; /* bg start */
+  --color-navy-mid: #131c33;
+  --color-indigo-3: #3730a3; /* bg end */
+
+  /* --- Glass surfaces --- */
+  --color-glass-light: rgba(255, 255, 255, 0.22);
+  --color-glass-light-border: rgba(255, 255, 255, 0.35);
+  --color-glass-dark: rgba(255, 255, 255, 0.06);
+  --color-glass-dark-border: rgba(255, 255, 255, 0.12);
+
+  /* --- Accents --- */
+  --color-amber: #fbbf24; /* sun icon */
+  --color-danger: #f87171; /* error state */
+  --color-danger-bg: rgba(239, 68, 68, 0.08);
+
+  /* --- Text --- */
+  --color-text-on-glass-light: #0b1220;
+  --color-text-on-glass-dark: #f1f5f9;
+
+  --radius-card: 24px;
+  --radius-input: 16px;
+}
+
+* {
+  transition: all 700ms;
+}
